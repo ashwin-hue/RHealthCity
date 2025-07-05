@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+   border-top: 8px #A41E34 solid;
+
+ 
+}
+
+.breadcrumb {
+  background: #f2f2f2;
+  color: black;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.academics-section {
+   background-color: #A41E34;
+  padding: 40px 20px;
+}
+
+.academics-section h2 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.column a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.column a:hover {
+  color: #ffcccb;
+}
+
+.column a span {
+  font-size: 18px;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.column a:hover span {
+  transform: translateX(5px);
+}
+.academicsh6{
+    font-size: 10px;
+}
+
+/* Background image is now in its own div */
+.video-hero-bg {
+    background-image: url('../assets/images/studentSupport.jpg');
+}
+
+
+
+.vice-chairman-section {
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.profile-card {
+  display: flex;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.profile-img {
+  max-width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  align-self: flex-start;
+}
+
+.profile-content h2,
+.profile-text h2 {
+  color: #A41E34;
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  text-wrap: wrap;
+}
+
+.profile-content h3,
+.profile-text h3 {
+  color: #3a3a3a;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-wrap: wrap;
+}
+
+.profile-content p,
+.profile-text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #333;
+  text-wrap: wrap;
+}
+
+.profile-text {
+  max-width: 850px;
+  height: fit-content;
+  text-wrap: wrap;
+}
+
+.pillars {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.pillar-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+}
+
+.pillar-card img {
+  width: 40px;
+  margin-bottom: 0.75rem;
+}
+
+.pillar-card h4 {
+  font-size: 1rem;
+  color: #A41E34;
+  margin-bottom: 0.4rem;
+}
+
+.vision-section {
+  margin-top: 2rem;
+  background: #A41E34;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.vision-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.vision-section p {
+  font-style: italic;
+  max-width: 800px;
+  margin: auto;
+}
+@media only screen and (max-width:750px){
+    .profile-card{
+        flex-direction: column;
+    }
+}

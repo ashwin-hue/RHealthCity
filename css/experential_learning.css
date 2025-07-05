@@ -1,0 +1,442 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+
+  background: #f8f9fc;
+  color: #333;
+}
+
+.breadcrumb {
+  background: #f2f2f2;
+  color: black;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.academics-section {
+   background-color: #A41E34;
+  padding: 40px 20px;
+}
+
+.academics-section h2 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.column a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.column a:hover {
+  color: #ffcccb;
+}
+
+.column a span {
+  font-size: 18px;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.column a:hover span {
+  transform: translateX(5px);
+}
+.academicsh6{
+    font-size: 10px;
+}
+/* Background image is now in its own div */
+.video-hero-bg {
+    background-image: url('../assets/images/box3.jpg');
+}
+
+.banner1 {
+  
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    overflow: visible;
+    height: 130px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.banner-left1 {
+    background-image: url('../assets/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 180px;
+    align-self: center;
+}.banner-left1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8C1515;
+    transition: transform 1s ease;
+    z-index: 0;
+    transform: translateX(0);
+    clip-path: inherit;
+}
+
+.banner-left1.active::before {
+    transform: translateX(-100%);
+}
+
+.education-section {
+  text-align: center;  background-color: #5a6772;
+  padding: 40px 20px;
+}
+
+.education-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.education-section p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 932px;
+  height: 602px;
+  gap: 1px 1px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width:465px;
+  overflow: hidden;
+}
+
+/* Container for overlay */
+.hover-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  color: #fff;
+  text-align: left;
+  transition: background 0.2s ease-in-out;
+}
+
+/* On hover - background appears */
+.grid-item:hover .hover-overlay {
+  background: rgba(44, 44, 44, 0.6);
+}
+
+/* Animate text upwards slightly on hover */
+.hover-overlay small,
+.hover-overlay h2,
+.hover-overlay button {
+  transform: translateY(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Move text up a bit on hover */
+.grid-item:hover .hover-overlay small,
+.grid-item:hover .hover-overlay h2,
+.grid-item:hover .hover-overlay button {
+  transform: translateY(-10px);
+}
+.grid-item {
+  cursor: pointer;
+}
+
+
+
+.grid-item:hover .hover-overlay {
+  transform: translateY(0%);
+}
+
+.hover-overlay small {
+  font-size: 0.75rem;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.hover-overlay h2 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.hover-overlay button {
+  margin-top: 10px;
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hover-overlay button:hover {
+  background: #ccc;
+}
+.slider-section {
+  margin-bottom: 50px;
+}
+
+.slider-container {
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+  overflow: hidden;
+  min-height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+  border-radius: 5px;
+}
+
+.image-slider {
+  display: flex;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  object-fit: cover;
+}
+
+.slide.active {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #A41E34;
+  opacity: 0.8;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #A41E34;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    height: 250px;
+  }
+}
+@media (max-width: 1008px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .grid-item {
+    width: 100%;
+    height: 250px;
+  }
+
+  .hover-overlay {
+    padding: 15px;
+  }
+
+  .hover-overlay h2 {
+    font-size: 1.25rem;
+  }
+
+  .hover-overlay small {
+    font-size: 0.7rem;
+  }
+
+  .hover-overlay button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+.white{
+  color: white;
+}
+.experential_learningh6{
+    padding-left: 50px;
+    width: fit-content;
+}
+@media only screen and (min-width: 1200px) {
+.experential_learningh6{
+    position: relative;
+    left: 200px;
+}
+}
+
+.facility-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.facility-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.facility-card.reverse {
+  flex-direction: row-reverse;
+}
+.facility-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.facility-image:hover img {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.facility-text {
+  flex: 1;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(144, 19, 254, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.facility-text:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.facility-text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #A41E34 ;
+  background: linear-gradient(90deg, #A41E34 , #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 1.4rem;
+}
+
+.facility-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .facility-card,
+  .facility-card.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .facility-text h2 {
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+
+  .facility-text p {
+    font-size: 0.95rem;
+  }
+}
+.facility-card:hover .facility-image img,
+.facility-card:hover .facility-text {
+  transform: scale(1.05);
+  z-index: 2;
+}

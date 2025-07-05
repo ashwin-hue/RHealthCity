@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+h2 {
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.phone-group {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-group select {
+    width: 100px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+    color: #555;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.login-btn {
+    background-color: #2ecc71;
+}
+
+.login-btn:hover {
+    background-color: #27ae60;
+}
+
+.register-btn {
+    background-color: #e74c3c;
+}
+
+.register-btn:hover {
+    background-color: #c0392b;
+}
+
+.captcha-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.captcha-display {
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+.refresh-captcha {
+    width: auto;
+    padding: 10px;
+    background-color: #95a5a6;
+}
+
+.refresh-captcha:hover {
+    background-color: #7f8c8d;
+}
+
+.resend-verification {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.resend-btn {
+    background: none;
+    color: #3498db;
+    border: 1px solid #3498db;
+    padding: 10px 15px;
+    width: auto;
+    display: inline-block;
+}
+
+.resend-btn:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .phone-group {
+        flex-direction: column;
+    }
+    
+    .phone-group select {
+        width: 100%;
+    }
+}

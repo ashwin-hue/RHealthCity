@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  
+  border-top: 8px #A41E34 solid;
+  background-color: rgb(233, 230, 230);
+}
+
+
+.breadcrumb {
+  background: #f2f2f2;
+  color: black;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.academicsh6 {
+  font-size: 10px;
+}
+
+
+.video-hero-bg {
+  background-image: url('../assets/images/commitee.jpg');
+}
+
+.container{
+  width: 1000px;
+}
+
+.header-box {
+  background: linear-gradient(to right, #a41e34,#f85f78);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-box h2 {
+  font-size: 1.8rem;
+}
+
+.header-box p {
+  font-size: 1rem;
+}
+
+.custom-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.custom-table thead {
+  background-color: #1e1b4b;
+  color: white;
+  font-weight: 600;
+}
+
+.custom-table th {
+  padding: 14px;
+  color: white;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.custom-table td {
+  padding: 16px 14px;
+  vertical-align: top;
+  color: #1a1a1a;
+  background-color: #fff;
+  border-bottom: 20px solid #f7f9fc;
+  word-wrap: break-word;
+  max-width: 500px;
+}
+
+.custom-table tbody tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+.custom-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.table-responsive {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow-x: auto;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .header-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .header-box p {
+    font-size: 0.9rem;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-table td,
+  .custom-table th {
+    font-size: 0.85rem;
+  }
+
+  .header-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .header-box p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+

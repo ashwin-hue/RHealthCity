@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+.navbar {
+  padding: 10px 0;
+  height: 60px;
+}
+.header1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact-btn{
+  background-color: #A41E34;
+  color: white;
+}
+
+.contact-btn:hover{
+  background-color: #891529;
+  color: white;
+}
+#menuOverlay{
+    display: none;
+}
+.navbar-brand{
+  margin-right: 30px;
+}
+.img-fluid {
+  height: 50px;
+  object-fit: contain;
+}
+.header2{
+  display: flex;
+}
+.container-fluid{
+  justify-content: space-evenly;
+}
+
+/* Transparent navbar styles */
+.navbar-transparent {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: #A41E34 !important;
+}
+
+.transition-navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-scrolled.shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hw:hover {
+  cursor: pointer;
+  
+}
+.hw{
+font-size: 16px;
+}
+
+
+
+.video-main{
+  height: 100%;
+  color: white;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding-left: 60px; 
+  position: relative; 
+  padding-bottom: 30px;
+  z-index: 2;
+}
+.video-hero1 {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    background-color: black;
+}
+.video-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(40%);
+    z-index: 1; /* below content */
+}
+.video-main-inside{
+  display: flex;
+  flex-direction: column;
+}
+.video-lead{
+  font-size: 1.2rem;
+}
+
+
+
+/* Sidebar styles */
+/* Sidebar main container */
+/* Reset some basic styles */
+
+
+/* Sidebar main container */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 580px;
+  height: 100vh;
+  background-color: #A41E34;
+  color: white;
+  z-index: 2000;
+  transition: right 0.4s ease;
+  padding: 1rem 1.5rem;
+  overflow-y: auto;
+}
+
+/* Show sidebar */
+.side-menu.show {
+  right: 0;
+}
+
+/* Sidebar header (top logo and close button) */
+.side-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sidebar logo */
+.side-menu-header img {
+  height: 80px;
+}
+
+/* Close button */
+#closeMenu1 {
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+}
+
+/* Sidebar body content */
+.side-menu-body {
+  margin-top: 20px;
+}
+
+/* Unordered list */
+.footer-ul1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  row-gap: 25px;
+  margin: 40px 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Menu items */
+.footer-ul1 li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  display: block;
+  
+  transition: all 0.3s ease;
+}
+
+.footer-ul1 li a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* Overlay background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1500;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* Optional: Disable body scroll when sidebar is open */
+body.no-scroll {
+  overflow: hidden;
+}
+
+
+@media (max-width:1450px) {
+    .hw , .contact-btn{
+        display: none;
+    }
+    .hw1{
+      display: block;
+    }
+    #menuButton{
+        display: block;
+    }
+    .header1{
+      justify-content: space-around;
+    }
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (min-width:1400px) {
+  .btt{
+    margin-right: 20px;
+  }
+  .academicsh6{
+    padding-left: 300px;
+  }
+  .academics-section{
+      height: 250px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .video-hero1 {
+    width: 100%;
+    height: 45dvh;
+}
+.video-lead{
+  font-size: 0.8rem;
+}
+.header-head{
+  font-size: 1.3rem;
+}
+.video-main{
+  width: 90%;
+}
+}
+
+@media only screen and (max-width:580px) {
+    .side-menu{
+        width: 80vw;
+    }
+    .h1{
+        font-size:28px;
+    }
+    .lead{
+        font-size: 18px;
+    }
+    .academic-card{
+        border: 2px solid white;
+    }
+    .academic-bg{
+        border-right:2px solid white ;
+    }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hw {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .navbar-collapse {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  }
+
+  .img-fluid {
+    height: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .video-main{
+    padding-left: 20px; 
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 457px) {
+  #mainNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+}

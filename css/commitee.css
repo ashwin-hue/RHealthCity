@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  
+  border-top: 8px #A41E34 solid;
+  background-color: rgb(233, 230, 230);
+}
+
+
+.committee-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.committee-header {
+  background: linear-gradient(90deg, #A41E34, #f85f78);
+  color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.committee-header h2 {
+  margin-bottom: 10px;
+}
+
+.committee-header p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.committee-list {
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.committee-card {
+  padding: 15px 20px;
+  border: 2px solid #dadce0;
+  border-radius: 10px;
+  background-color: white;
+  color: #A41E34;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.committee-card:hover {
+  background-color: #A41E34;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Active state (optional) */
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .committee-header p {
+    font-size: 13px;
+  }
+
+  .committee-card {
+    font-size: 15px;
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .committee-header {
+    padding: 20px 15px;
+  }
+
+  .committee-card {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .committee-list {
+    padding: 15px;
+  }
+}
+
+
+
+.breadcrumb {
+  background: #f2f2f2;
+  color: black;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.academicsh6 {
+  font-size: 10px;
+}
+
+
+.video-hero-bg {
+  background-image: url('../assets/images/commitee.jpg');
+}
+
+
+
+/* Optional Responsive */
+@media (max-width: 600px) {
+  .overlay-content5 {
+    padding: 20px 15px;
+  }
+
+  .main-header {
+    font-size: 1.7rem;
+  }
+
+  .sub-head {
+    font-size: 1.1rem;
+  }
+
+  .para {
+    font-size: 0.9rem;
+  }
+}
+.departicon{
+  padding-left: 20px;
+  font-size: 14px;
+
+}

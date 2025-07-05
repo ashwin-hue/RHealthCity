@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+    border-top: 8px #A41E34 solid;
+}
+
+
+.breadcrumb {
+  background: #f2f2f2;
+  color: black;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.academics-section {
+   background-color: #A41E34;
+  padding: 40px 20px;
+}
+
+.academics-section h2 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+
+.academicsh6{
+    font-size: 10px;
+}
+
+/* Background image is now in its own div */
+.video-hero-bg {
+    background-image: url('../assets/images/healthcampheaderimg.jpg');
+}
+
+ul{
+    list-style: none;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-head{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #A41E34;
+}
+
+.img-desc{
+    color: #7d7c7c;
+}
+
+
+.slider-section {
+  margin-bottom: 50px;
+}
+
+.slider-container {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  min-height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+  border-radius: 5px;
+}
+
+.image-slider {
+  display: flex;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #A41E34;
+  opacity: 0.8;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #A41E34;
+}
+
+
+
+/* For tablets (max width: 992px) */
+@media screen and (max-width: 992px) {
+  .slider-container {
+    width: 90%;
+    min-height: 200px;
+  }
+  .camp-content , .img-desc{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .slide img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+  .wrapper{
+    width: 80%;
+  }
+  .arrow {
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* For mobile devices (max width: 600px) */
+@media screen and (max-width: 600px) {
+  .slider-container {
+    width: 90%;
+    min-height: 200px;
+  }
+  .camp-content , .img-desc{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .slide img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .arrow {
+    font-size: 18px;
+    padding: 5px 8px;
+  }
+
+  .dots-container {
+    padding: 6px 0;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+  }
+}

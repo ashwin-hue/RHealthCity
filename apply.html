@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Open - Rajalakshmi Institute of Technology</title>
+    <link rel="stylesheet" href="css/apply.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admission Open</h1>
+        
+        <form id="admissionForm" action="apply.php" method="POST">
+            <h2>Register</h2>
+            
+            <div class="form-group">
+                <button type="button" class="login-btn">
+                    <i class="fas fa-user"></i> Login
+                </button>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Enter Name *" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Enter Email Address *" required>
+            </div>
+            
+            <div class="form-group phone-group">
+                <select id="countryCode" name="countryCode">
+                    <option value="+91">+91 (India)</option>
+                    <option value="+1">+1 (USA)</option>
+                    <option value="+44">+44 (UK)</option>
+                </select>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number *" required>
+            </div>
+            
+            <div class="form-group">
+                <select id="state" name="state" required>
+                    <option value="" disabled selected>| Tamil Nadu | Select State *</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <select id="city" name="city" required>
+                    <option value="" disabled selected>Select City *</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Trichy">Trichy</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select Course *</option>
+                    <option value="B.Tech CSE">B.Tech Computer Science</option>
+                    <option value="B.Tech IT">B.Tech Information Technology</option>
+                    <option value="B.Tech ECE">B.Tech Electronics</option>
+                    <option value="B.Tech Mech">B.Tech Mechanical</option>
+                </select>
+            </div>
+            
+            <div class="form-group captcha-group">
+                <div class="captcha-display">265a13</div>
+                <input type="text" id="captcha" name="captcha" placeholder="Enter text as shown" required>
+                <button type="button" class="refresh-captcha"><i class="fas fa-sync-alt"></i></button>
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I agree to receive information by signing up on Rajalakshmi Institute of Technology *</label>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="register-btn">Register</button>
+            </div>
+        </form>
+        
+        <div class="resend-verification">
+            <button type="button" class="resend-btn">RESEND VERIFICATION EMAIL</button>
+        </div>
+    </div>
+
+    <script src="js/apply.js"></script>
+</body>
+</html>

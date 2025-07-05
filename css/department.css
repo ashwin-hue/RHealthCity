@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border-top: 8px #A41E34 solid;
+  background-color: rgb(233, 230, 230);
+}
+
+.breadcrumb {
+  background: #f2f2f2;
+  color: black;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.academics-section h2 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.academicsh6 {
+  font-size: 10px;
+}
+
+
+.video-hero-bg {
+  background-image: url('../assets/images/admissions.jpg');
+}
+.academics-section {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  height: fit-content;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.academics-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../assets/images/departmentbackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(28px);
+  z-index: -1; /* Places it behind the content */
+}
+
+
+.title {
+  font-size: 3rem;
+  color: #A41E34;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  text-underline-offset: 10px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.departments {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.dept-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+}
+
+.dept-column h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.btn1 {
+  width: 230px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid;
+  border-radius: 8px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn1.blue {
+  color: #A41E34;
+  border-color: #A41E34;
+}
+.btn1.pink {
+  color: black;
+  border-color: black;
+}
+
+.btn1:hover {
+  transform: scale(1.03);
+}
+.btn1.blue:hover {
+  background-color: #a41e34;
+  color: white;
+}
+.btn1.pink:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/* Overlay */
+.overlay5 {
+  position: fixed;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  height: 90%;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.25);
+  transition: bottom 0.4s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+  border-top: 7px solid #a41e34;
+}
+
+.overlay5.show {
+  bottom: 0;
+}
+
+.overlay-content5 {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 16px;
+
+}
+
+.close-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  z-index: 1100; /* higher than overlay content */
+  background: rgba(255, 255, 255, 0.6); /* optional translucent bg */
+  backdrop-filter: blur(6px); /* optional for glass effect */
+  padding: 8px 14px;
+  border-radius: 1000px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.main-header {
+  font-size: 2.2rem;
+  color: #A41E34;
+}
+
+.sub-head {
+  font-size: 1.3rem;
+  color: #A41E34;
+  margin-top: 20px;
+}
+
+.para {
+  font-size: 0.95rem;
+  color: #000;
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.para{
+  font-size: 1.1rem;
+}
+
+/* Optional Responsive */
+@media (max-width: 600px) {
+  .overlay-content5 {
+    padding: 20px 15px;
+  }
+
+  .main-header {
+    font-size: 1.7rem;
+  }
+
+  .sub-head {
+    font-size: 1.1rem;
+  }
+
+  .para {
+    font-size: 0.9rem;
+  }
+}
+.departicon{
+  padding-left: 20px;
+  font-size: 14px;
+
+}

@@ -1,0 +1,173 @@
+
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   border-top: 8px #A41E34 solid;
+}
+
+.breadcrumb {
+  background: #f2f2f2;
+  color: black;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.academics-section {
+   background-color: #A41E34;
+  padding: 40px 20px;
+}
+
+.academics-section h2 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.column a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.column a:hover {
+  color: #ffcccb;
+}
+
+.column a span {
+  font-size: 18px;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.column a:hover span {
+  transform: translateX(5px);
+}
+.academicsh6{
+    font-size: 10px;
+}
+
+/* Background image is now in its own div */
+.video-hero-bg {
+    background-image: url('../assets/images/news-header.jpg');
+}
+  
+  .event-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-title {
+    color: #a41e34;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .event-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .info-box {
+    background-color: #A41E34;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .slider {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .slide-img {
+    height: fit-content;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #A41E34;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .dots {
+    text-align: center;
+    margin: 10px 0 30px 0;
+  }
+  
+  .dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color:#a41e34;
+  }
+  
+  .event-paragraph {
+    margin: 20px 0;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.7;
+  }
+  

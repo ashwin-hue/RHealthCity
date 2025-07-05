@@ -1,0 +1,138 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    column-gap: 200px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 30px;
+}
+.footer-logo {
+    height: 180px;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    list-style: none;
+    padding: 0;
+    max-height: 500px;
+    column-gap: 35px;
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+}
+.footer-p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    border-radius: 1000px;
+}
+.contact{
+    display: flex;
+
+}
+.contact-head{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+.contact-text{
+    font-size: 1rem;
+    text-wrap: wrap;
+    margin: 0;
+}
+.contact-inside{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    min-width: 150px;
+}
+
+.address-icon, .phone-icon, .email-icon{
+    width: 45px;
+    height: 45px;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.address-icon{
+    background-image: url("../../assets/images/address.png");
+}
+.phone-icon{
+    background-image: url("../../assets/images/phone-icon.png");
+}
+.email-icon{
+    background-image: url("../../assets/images/mail-icon.png");
+}
+.contact-main{
+    text-align: left;
+    font-size: 18px;
+    padding-left: 40px;
+}
+.sm{
+    row-gap: 40px;
+}
+@media  (max-width:1120px){
+    .sm{
+        flex-direction: row;
+        margin-top: 20px;
+        column-gap: 15px;
+    }
+}
+@media  (max-width:750px){  
+    .footer-ul li{
+        width: fit-content;
+    }
+    .footer-p,.contact-text {
+        font-size:0.7rem ;
+        width: fit-content;
+    }
+    .contact-head{
+        width: fit-content;
+    }
+    .address-icon, .phone-icon, .email-icon{
+        width: 30px;
+        height: 30px;
+    }
+    .footer-logo {
+    height: auto;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+}
+@media only screen and (max-width:600px){
+    .footer-ul{
+        flex-direction: column;
+    }
+    .sm{
+        flex-direction: row;
+    }
+}
