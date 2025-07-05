@@ -72,11 +72,13 @@ window.addEventListener("resize", () => {
 
 
 const testimonials = {
-    anjali: "My name is Anjali, and I'm from Chennai. A few days ago, I had a sudden health issue and was rushed to Rajalakshmi Medical College. The doctors and nurses were incredibly supportive and acted quickly. I was admitted for two days, and I received excellent care, including quality medical attention, nutritious food, and a comfortable stay. I'm really grateful for their kindness and service.",
-    ravi: "I'm Ravi from Madurai. While working on a construction site, I had an accident and was brought to Rajalakshmi Medical College. From the moment I arrived, the staff treated me with great care and urgency. I underwent surgery and was given proper post-operative care along with accommodation and meals. Their support made my recovery much smoother.",
-    meena: "My name is Meena, a housewife. I was suffering from severe stomach pain and got admitted to Rajalakshmi Medical College. The hospital team provided timely and effective treatment. They ensured I was well-fed and had a clean, safe place to recover. I felt truly cared for throughout my stay.",
-    sanjay: "I'm Sanjay. I met with a road accident and was brought to Rajalakshmi Medical College in critical condition. The staff acted quickly to stabilize me. Over the next few days, they kept monitoring my progress, provided all necessary medical attention, and made sure I had everything I needed—from food to emotional support. I'm thankful to be in such capable hands.",
-    bharat: "My name is Bharat, I'm from Nepal. When I went to buy vegetables on my cycle I met with an accident. My boss suggested Rajalakshmi Medical College. For the past 3 days I've been admitted in the hospital. They gave good treatment and took care of me very well. They provided me free operation, food, accommodation and very well treatment."
+    anjali:  "My name is Anjali from Chennai. A few days ago, I experienced a sudden health issue and was taken to Rajalakshmi Medical College. The doctors and nurses responded quickly and provided excellent care. I’m deeply grateful for the compassion and professionalism shown throughout my stay.",
+    ravi: "I'm Ravi from Madurai. I had a workplace accident and was admitted to Rajalakshmi Medical College. From the moment I arrived, the staff provided timely care and attention. Their dedication during and after my surgery made my recovery much smoother.",
+    meena: "My name is Meena, a homemaker. I was admitted to Rajalakshmi Medical College with severe stomach pain. The hospital team gave me timely and effective treatment, along with a clean and safe environment to recover. I truly felt cared for every step of the way.",
+    sanjay:  "I'm Sanjay. After a road accident, I was rushed to Rajalakshmi Medical College in critical condition. The medical team acted fast to stabilize me and continued to monitor and support my recovery. Their care and commitment made a difficult time much easier.",
+    bharat:  "I’m Bharat from Nepal. After meeting with a cycling accident, I was admitted to Rajalakshmi Medical College on my employer’s recommendation. The medical care and support I received were outstanding. I’m truly grateful to the entire team for their compassion and professionalism."
+
+
 };
 
 const names = {
