@@ -141,6 +141,7 @@ body{
   flex: 1 1 22%;
   background-color: rgba(0, 0, 0, 0);
   color: white;
+  padding: 2rem 1.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -149,7 +150,6 @@ body{
   background-size: cover;
   background-position: center;
   border: solid 1px white;
-  height: 150px;
 }
 
 /* Overlay */
@@ -179,36 +179,37 @@ body{
 }
 
 /* Specific Background Images on Hover */
-.card1{
+.card1:hover {
   background-image: url('../assets/images/embrace.jpg');
 }
-.card2 {
+.card2:hover {
   background-image: url('../assets/images/buildyournetwork.jpg');
 
 }
-.card3 {
+.card3:hover {
   background-image: url('../assets/images/immence.jpg');
 }
-.card4 {
+.card4:hover {
   background-image: url('../assets/images/findyourplace.jpg');
 }
 
 /* Tags */
 .tag {
-  width: 100%;
-  height: fit-content;
-  display: block;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
   font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0.05em;
+  border-radius: 4px;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
 /* Tag Colors */
-.red { background-color: #e538357b; }
-.blue { background-color: #e538357b; }
-.pink { background-color: #e538357b; }
-.yellow { background-color: #e538357b; }
+.red { background-color: #e5383557; }
+.blue { background-color: #00bbd473; }
+.pink { background-color: #f0629167; }
+.yellow { background-color: #fdd83562; color: #000; }
 
 /* Card Title */
 .cards h3 {
@@ -247,8 +248,18 @@ body{
 .cc1{
   display: none;
 }
-.cards{
-    height: 550px;
+  .card1 {
+  background-image: url('../assets/images/embrace.jpg');
+}
+.card2 {
+  background-image: url('../assets/images/buildyournetwork.jpg');
+
+}
+.card3 {
+  background-image: url('../assets/images/immence.jpg');
+}
+.card4 {
+  background-image: url('../assets/images/findyourplace.jpg');
 }
 .cards:hover {
   transform: translateY(0px);
@@ -430,10 +441,7 @@ body{
     transform: translate(-10px, -10px);
     transition: opacity 0.3s ease;
 }
-.nab-btn{
-  text-wrap: nowrap;  
 
-}
 .video-frame {
     position: relative;
     height: 400px;
@@ -727,7 +735,6 @@ body{
     padding: 0;
     font-size: 1.2rem;
     font-weight: bold;
-    text-wrap: no-wrap;
 }
 
 .nav-item1 , .nav-item2 {
@@ -1422,8 +1429,6 @@ body.no-scroll {
 .hw{
     padding-left: 10px;
     color: white;
-    text-wrap: nowrap;
-
 }
 .hww{
     
